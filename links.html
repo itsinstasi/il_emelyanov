@@ -9,8 +9,8 @@
     <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
 	<link rel="stylesheet" href="css/style.css"/>
     
-    <meta name="description" content="глазамиасяшкина skillstory 21 емелиныпотешки яневи новат whiterocket откройрот2020 ктонеспрятался бизнесзавтрак21 машинапрогресса еслибвоздухбылкумаром">
-    <meta name="keywords" content="глазамиасяшкина skillstory 21 емелиныпотешки яневи новат whiterocket откройрот2020 ктонеспрятался бизнесзавтрак21 машинапрогресса еслибвоздухбылкумаром" />
+    <meta name="description" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром">
+    <meta name="keywords" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
     
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <meta property="og:image:width" content="150"/>
     <meta property="og:image:height" content="150"/>
     <meta property="og:title" content="Илья Емельянов" />
-    <meta property="og:description" content="глазамиасяшкина skillstory 21 емелиныпотешки яневи новат whiterocket откройрот2020 ктонеспрятался бизнесзавтрак21 машинапрогресса еслибвоздухбылкумаром" />
+    <meta property="og:description" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="il_emelyanov" />
 
@@ -66,6 +66,9 @@
 							<div class="header__logo-txt">il_emelyanov</div>
 						</a>
 						<div class="header__title">Илья Емельянов</div>
+					</div>
+					<div id="settingsContainer" class="header__right" style="display:none">
+						<button onclick="window.open('http://itsinsta.site/page.html?project=il_emelyanov');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -135,10 +138,18 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="stories__slide" title="машинапрогресса">
-									<a href="./tags/./mashinaprogressa.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/mashinaprogressa.png);"></div>
-										<div class="stories__slide-txt" style="">машинапрогресса</div>
+								<div class="stories__slide" title="бомбуночьюсочинял">
+									<a href="./tags/./bombunoch-yusochinyal.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/bombunoch-yusochinyal.png);"></div>
+										<div class="stories__slide-txt" style="">бомбуночьюсочинял</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="чтоестьмочи начинял">
+									<a href="./tags/./chtoest-mochi-nachinyal.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/chtoest-mochi-nachinyal.png);"></div>
+										<div class="stories__slide-txt" style="">чтоестьмочи начинял</div>
 									</a>
 								</div>
 							</div>
@@ -159,26 +170,18 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
+								<div class="stories__slide" title="машинапрогресса">
+									<a href="./tags/./mashinaprogressa.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/mashinaprogressa.png);"></div>
+										<div class="stories__slide-txt" style="">машинапрогресса</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="stories__slide" title="digital агентство whiterocket">
 									<a href="./tags/./digital-agentstvo-whiterocket.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/digital-agentstvo-whiterocket.png);"></div>
 										<div class="stories__slide-txt" style="">digital агентство whiterocket</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="stories__slide" title="яневи новат">
-									<a href="./tags/./yanevi-novat.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/yanevi-novat.png);"></div>
-										<div class="stories__slide-txt" style="">яневи новат</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="stories__slide" title="ктонеспрятался">
-									<a href="./tags/./ktonespryatalsya.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/ktonespryatalsya.png);"></div>
-										<div class="stories__slide-txt" style="">ктонеспрятался</div>
 									</a>
 								</div>
 							</div>
@@ -305,7 +308,34 @@ function getFormData($form){
     return indexed_array;
 }
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+}
+
 $(document).ready(function(){
+	var lid = getUrlParameter("lid");
+	if (lid) {
+        localStorage.setItem("hasToken", true);
+
+		$("#settingsContainer").show();
+		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (localStorage.getItem("hasToken"))
+	{
+		$("#settingsContainer").show();
+	}
+
     $('form').submit(function(){
 	event.preventDefault(); //prevent default action 
 
