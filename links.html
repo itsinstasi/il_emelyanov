@@ -9,8 +9,8 @@
     <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
 	<link rel="stylesheet" href="css/style.css"/>
     
-    <meta name="description" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром">
-    <meta name="keywords" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
+    <meta name="description" content="skillstory 21 глазамиасяшкина whiterocket откройрот2020 емелиныпотешки бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром">
+    <meta name="keywords" content="skillstory 21 глазамиасяшкина whiterocket откройрот2020 емелиныпотешки бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
     
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <meta property="og:image:width" content="150"/>
     <meta property="og:image:height" content="150"/>
     <meta property="og:title" content="Илья Емельянов" />
-    <meta property="og:description" content="глазамиасяшкина skillstory 21 емелиныпотешки whiterocket откройрот2020 бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
+    <meta property="og:description" content="skillstory 21 глазамиасяшкина whiterocket откройрот2020 емелиныпотешки бизнесзавтрак21 машинапрогресса бомбуночьюсочинял чтоестьмочи начинял еслибвоздухбылкумаром" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="il_emelyanov" />
 
@@ -82,14 +82,6 @@
 					<div class="stories__slider" id="js-stories-slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="stories__slide" title="глазамиасяшкина">
-									<a href="./tags/./glazamiasyashkina.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/glazamiasyashkina.png);"></div>
-										<div class="stories__slide-txt" style="">глазамиасяшкина</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
 								<div class="stories__slide" title="skillstory 21">
 									<a href="./tags/./skillstory-21.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/skillstory-21.png);"></div>
@@ -98,10 +90,10 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="stories__slide" title="емелиныпотешки">
-									<a href="./tags/./emelinypoteshki.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/emelinypoteshki.png);"></div>
-										<div class="stories__slide-txt" style="">емелиныпотешки</div>
+								<div class="stories__slide" title="глазамиасяшкина">
+									<a href="./tags/./glazamiasyashkina.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/glazamiasyashkina.png);"></div>
+										<div class="stories__slide-txt" style="">глазамиасяшкина</div>
 									</a>
 								</div>
 							</div>
@@ -118,6 +110,14 @@
 									<a href="./tags/./yabystalvozdushnymsharom.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/yabystalvozdushnymsharom.png);"></div>
 										<div class="stories__slide-txt" style="">ябысталвоздушнымшаром</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="емелиныпотешки">
+									<a href="./tags/./emelinypoteshki.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/emelinypoteshki.png);"></div>
+										<div class="stories__slide-txt" style="">емелиныпотешки</div>
 									</a>
 								</div>
 							</div>
@@ -174,14 +174,6 @@
 									<a href="./tags/./mashinaprogressa.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/mashinaprogressa.png);"></div>
 										<div class="stories__slide-txt" style="">машинапрогресса</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="stories__slide" title="digital агентство whiterocket">
-									<a href="./tags/./digital-agentstvo-whiterocket.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/digital-agentstvo-whiterocket.png);"></div>
-										<div class="stories__slide-txt" style="">digital агентство whiterocket</div>
 									</a>
 								</div>
 							</div>
@@ -330,6 +322,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
